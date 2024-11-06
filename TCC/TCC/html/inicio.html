@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="../elements/cibernetica.jpeg" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursos de Segurança Cibernética</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        h1 {
+            color: #132231;
+            border-bottom: 10px solid red;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+        }
+        .link-card {
+            padding: 15px;
+            background-color: #e4cdcd;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        .link-card:hover {
+            transform: translateY(-2px);
+        }
+        a {
+            text-decoration: none;
+            color: #04203d;
+            font-weight: bold;
+            display: block;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative; 
+            min-height: 400px; 
+            padding-bottom: 60px;
+        }
+        .btn-sair {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            padding: 10px 20px;
+            background-color: #dc3545;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        .btn-sair:hover {
+            background-color: #c82333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="btn-sair" onclick="logout()">Sair</button>
+        <h1>Recursos de Segurança Cibernética</h1>
+        <ul>
+            <li><div class="link-card"><a href="../html/politica.html" target="_blank">Política de Segurança Cibernética</a></div></li>
+            <li><div class="link-card"><a href="../html/RESPOSTA.HTML" target="_blank">Procedimentos de Resposta a Incidentes</a></div></li>
+            <li><div class="link-card"><a href="../html/DIRETRISES.HTML" target="_blank">Diretrizes para Proteção de Dados</a></div></li>
+            <li><div class="link-card"><a href="../html/manual.html" target="_blank">Manual de Treinamento em Segurança Cibernética</a></div></li>
+            <li><div class="link-card"><a href="../html/plano.html" target="_blank">Plano de Recuperação de Desastres</a></div></li>
+            <li><div class="link-card"><a href="../html/informacao.html" target="_blank">Relatórios de Vulnerabilidades e Correções</a></div></li>
+            <li><div class="link-card"><a href="../html/guias.html" target="_blank">Guias de Melhorias em Segurança</a></div></li>
+            <li><div class="link-card"><a href="../html/Procedimento.HTML" target="_blank">Procedimentos de Avaliação de Risco</a></div></li>
+            <li><div class="link-card"><a href="../html/conformidade.html" target="_blank">Documentação de Conformidade com Regulamentações</a></div></li>
+            <li><div class="link-card"><a href="../html/fqs.html" target="_blank">FAQs sobre Segurança Cibernética</a></div></li>
+        </ul>
+    </div>
+</body>
+<script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-firestore-compat.js"></script>
+
+<script src="../Java/firebase.js"></script>
+<script src="../java/logout.js"></script>
+
+
+
+</html>

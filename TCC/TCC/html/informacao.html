@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório de Vulnerabilidades</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #d3d3d3;
+            color: #333; 
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #007BFF;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: #f0f0f0; 
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .button {
+            display: block;
+            width: 100px;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #45a049; 
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 14px;
+            color: #666;
+        }
+        .important {
+            color: #d9534f;
+        }
+        .small-text {
+            font-size: 14px;
+            color: #555;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Relatório de Vulnerabilidades e Correções</h1>
+
+    <div class="section">
+        <p><strong>Introdução:</strong> Este relatório documenta as vulnerabilidades identificadas em sistemas e aplicativos, com recomendações práticas para mitigação.</p>
+    </div>
+    
+    <div class="section">
+        <p><strong>Metodologia:</strong> A identificação de vulnerabilidades foi realizada por meio de testes de penetração, varreduras automatizadas e revisões de código.</p>
+    </div>
+    
+    <div class="section">
+        <p><strong>Resumo Executivo:</strong> As principais vulnerabilidades incluem falhas de configuração, vulnerabilidades de software e problemas de segurança em protocolos de comunicação.</p>
+    </div>
+    
+    <div class="section">
+        <p><strong>Vulnerabilidades Identificadas:</strong></p>
+        <ul>
+            <li><strong>VULN-001:</strong> Falha de autenticação em aplicativo web.</li>
+            <li><strong>VULN-002:</strong> Exposição de dados em um servidor sem proteção.</li>
+            <li><strong>VULN-003:</strong> Injeção de SQL em formulários de entrada.</li>
+        </ul>
+    </div>
+    
+    <div class="section">
+        <p><strong>Correções Recomendadas:</strong></p>
+        <ul>
+            <li>Implementar autenticação multifator.</li>
+            <li>Configurar regras de firewall.</li>
+            <li>Realizar validação de entrada para prevenir injeção de SQL.</li>
+            <li>Revisar e atualizar as configurações de segurança do servidor.</li>
+        </ul>
+    </div>
+    
+    <div class="section">
+        <p><strong>Análise de Risco:</strong> Avaliação das vulnerabilidades e riscos associados, categorizando-os em alta, média e baixa prioridade.</p>
+    </div>
+    
+    <div class="section">
+        <p><strong>Conclusões:</strong> A implementação das correções é crucial para minimizar a exposição a ameaças. A monitoração contínua e a auditoria periódica devem ser realizadas para garantir a eficácia das medidas.</p>
+    </div>
+
+    <div class="section">
+        <p class="small-text"><strong>Nota:</strong> Relatórios de vulnerabilidade e correção são ferramentas essenciais para a gestão de segurança da informação. Eles ajudam as organizações a identificar e remediar riscos, promovendo um ambiente digital mais seguro.</p>
+    </div>
+
+    <a href="../html/inicio.html" class="button">Voltar</a>
+    
+    <div class="footer">
+        <p>© 2024 Segurança Cibernética. Todos os direitos reservados.</p>
+    </div>
+</div>
+
+</body>
+<script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-firestore-compat.js"></script>
+
+<script src="../Java/firebase.js"></script>
+</html>

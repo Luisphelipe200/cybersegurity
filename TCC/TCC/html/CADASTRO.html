@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Cadastro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            margin-bottom: 20px;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .link {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .error{
+        color: rgb(255, 45, 45);
+        font-size: small;
+        display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Cadastro</h2>
+        <input type="text" name="name" id="name" onchange="onChangeName()" class="text_place" placeholder="Name"/>
+        <div class="error" id="name-required-error">Name required</div>
+
+
+
+        <input type="email" name="email" id="email" onchange="onChangeEmail()" class="text_place" placeholder="Your@email.com"/>
+        <div class="error" id="email-required-error">Email required</div>
+        <div class="error" id="email-invalid-error">Invalid email. Please try again.</div>
+
+
+
+        <input type="password" name="password" id="password" onchange="onChangePassword()" class="text_place" placeholder="Password" />
+        <div class="error" id="password-required-error">Password required</div>
+        <div class="error" id="password-min-length-error">Password must be at least 6 characters long</div>
+
+
+        <button type="button" class="sign" id="sign-button" disabled="true" onclick="signup()">Cadastrar</button>
+        <div class="link">
+            <a href="../html/LOGIN.HTML">Já tem uma conta? Faça login</a>
+        </div>
+    </div>
+</body>
+<script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-firestore-compat.js"></script>
+
+<script src="../Java/firebase.js"></script>
+<script src="../java/cadastro_validation.js"></script>
+
+</html>

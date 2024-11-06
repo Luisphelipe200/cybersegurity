@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Segurança Cibernética</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #ddd 1px solid;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .back-button {
+            display: inline-block;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        .back-button:hover {
+            background: #555;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .content .text {
+            flex: 1;
+        }
+        .content .image-container {
+            flex: 0 0 30%;
+            position: sticky;
+            top: 20px; /* Ajuste o valor conforme necessário */
+            text-align: center;
+        }
+        .content .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        article {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2, h3 {
+            color: #333;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            background: #eee;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Política de Segurança Cibernética</h1>
+        </div>
+    </header>
+    <div class="container">
+        <a href="../html/inicio.html" class="back-button">Voltar</a>
+        <div class="content">
+            <div class="text">
+                <article>
+                    <h2>O que é Segurança Cibernética?</h2>
+                    <p>A segurança cibernética visa proteger computadores, redes, aplicativos e dados contra ameaças digitais. É essencial para manter a confiança do cliente e garantir a conformidade regulatória, usando ferramentas e medidas para proteger informações sigilosas e evitar interrupções nas operações comerciais.</p>
+                    
+                    <h2>Importância da Segurança Cibernética</h2>
+                    <p>Organizações de diversos setores, como energia e varejo, dependem de sistemas digitais e conectividade para operar eficientemente. A segurança cibernética é crucial para proteger ativos digitais contra acessos não autorizados e ataques cibernéticos, que podem resultar em exposição ou roubo de dados. Benefícios incluem:</p>
+                    
+                    <h3>Redução de Custos de Violações</h3>
+                    <p>Protege contra consequências que afetam reputação, finanças e operações.</p>
+                    
+                    <h3>Conformidade Regulatória</h3>
+                    <p>Atende a requisitos legais, como o GDPR na Europa.</p>
+                    
+                    <h3>Mitigação de Ameaças em Desenvolvimento</h3>
+                    <p>Adapta-se a novas tecnologias e métodos de ataque.</p>
+                    
+                    <h2>Tipos Comuns de Ataques Cibernéticos</h2>
+                    <ul>
+                        <li><strong>Malware:</strong> Software malicioso, como vírus e spyware, que compromete a segurança dos sistemas.</li>
+                        <li><strong>Ransomware:</strong> Extorsão financeira através da criptografia de dados essenciais.</li>
+                        <li><strong>Ataque Man-in-the-Middle:</strong> Interceptação não autorizada de dados em trânsito.</li>
+                        <li><strong>Phishing:</strong> Engana usuários para obter informações pessoais através de e-mails fraudulentos.</li>
+                        <li><strong>DDoS:</strong> Sobrecarga de servidores com solicitações falsas para impedir acesso legítimo.</li>
+                        <li><strong>Ameaça Interna:</strong> Risco de funcionários com intenções maliciosas comprometendo a segurança.</li>
+                    </ul>
+                </article>
+            </div>
+            <div class="image-container">
+                <img src="../elements/politica.jpg" alt="Política de Segurança Cibernética">
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-firestore-compat.js"></script>
+
+<script src="../Java/firebase.js"></script>
+</html>

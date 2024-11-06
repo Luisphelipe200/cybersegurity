@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plano de Recuperação de Desastres de TI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 20px;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 20px; /* Increased font size */
+        }
+        h1 {
+            color: #007bff;
+            font-weight: bold;
+            font-size: 28px; /* Increased font size for header */
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 24px; /* Increased font size for subheaders */
+            font-weight: bold;
+            margin-top: 15px;
+            color: #0056b3; /* Subheader color */
+        }
+        p, ul {
+            max-width: 600px;
+            margin: 10px 0;
+            text-align: left;
+            font-weight: bold;
+            font-size: 20px; /* Increased font size for paragraph and list */
+        }
+        .content {
+            width: 80%;
+            margin: auto;
+            padding: 30px;
+            border: 2px solid #007bff; /* Blue border */
+            border-radius: 10px;
+            background-color: #ffffff; /* White background */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            position: relative; /* Allows absolute positioning of image */
+        }
+        .imgdes {
+            max-width: 35%;
+            height: auto;
+            border-radius: 10px;
+            position: absolute; /* Position the image absolutely */
+            left: 50%; /* Center the image */
+            transform: translateX(-50%); /* Adjust to center */
+            top: -70px; /* Move the image outside the top of the border */
+            z-index: -1; /* Ensure it stays behind the content */
+        }
+        .text-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; /* Align text to the start */
+            margin-top: 80px; /* Space for the image */
+        }
+        a {
+            display: block;
+            text-decoration: none;
+            color: white;
+            background-color: #007bff;
+            padding: 12px 24px; /* Increased padding */
+            border-radius: 5px;
+            margin: 20px auto;
+            width: fit-content;
+            text-align: center;
+            transition: background-color 0.3s;
+            font-size: 20px; /* Increased font size for button */
+        }
+        a:hover {
+            background-color: #0056b3;
+        }
+        .background-gray {
+            background-color: #d3d3d3; /* Light gray */
+            padding: 20px;
+            border-radius: 10px;
+            width: 100%; /* Ensure it covers full width */
+        }
+    </style>
+</head>
+<body class="background-gray">
+    <div class="content">
+        <img class="imgdes" src="../elements/DESASTRE.jpg" alt="Desastre">
+        <h1>Plano de Recuperação de Desastres de TI</h1>
+        <div class="text-container">
+            <p>Os desastres de TI podem ocorrer a qualquer momento, ameaçando a continuidade das operações empresariais e resultando em perdas significativas de dados. Um plano de recuperação de desastres de TI bem estruturado é fundamental para garantir a continuidade dos negócios, minimizando o tempo de inatividade e protegendo informações críticas.</p>
+
+            <h2>O que é?</h2>
+            <p>Um plano de recuperação de desastres de TI é um conjunto de estratégias e procedimentos que visam restaurar a infraestrutura e os sistemas de TI após uma interrupção.</p>
+
+            <h2>Importância do Plano</h2>
+            <ul>
+                <li>Proteção de dados: Minimiza a perda e comprometimento de informações sensíveis.</li>
+                <li>Continuidade operacional: Garante que as operações sigam com o mínimo de interrupções.</li>
+                <li>Confiança do cliente: Demonstra a resiliência e a preparação da empresa.</li>
+                <li>Conformidade regulatória: Atende aos requisitos legais de proteção de dados.</li>
+                <li>Resposta a emergências: Ajuda a minimizar impactos nas operações.</li>
+            </ul>
+
+            <h2>Tipos de Desastres de TI</h2>
+            <ul>
+                <li>Desastres naturais: Como terremotos, inundações e incêndios.</li>
+                <li>Ataques cibernéticos: Ransomware, phishing e outras ameaças digitais.</li>
+                <li>Falhas de hardware: Mau funcionamento de servidores e dispositivos.</li>
+                <li>Erros de software: Bugs e falhas que comprometem o funcionamento.</li>
+                <li>Erros humanos: Exclusões acidentais ou configurações inadequadas.</li>
+            </ul>
+
+            <h2>Impactos dos Desastres de TI</h2>
+            <ul>
+                <li>Perdas financeiras: Custos relacionados a interrupções e recuperação de dados.</li>
+                <li>Tempo de inatividade operacional: Interrupções nos serviços empresariais.</li>
+                <li>Danos à reputação: Perda da confiança dos clientes.</li>
+                <li>Falta de conformidade: Possíveis multas e consequências legais.</li>
+            </ul>
+
+            <h2>Componentes do Plano</h2>
+            <ul>
+                <li>Avaliação de risco: Identificação de vulnerabilidades potenciais.</li>
+                <li>Análise de impacto nos negócios (AIN): Avaliação das consequências de desastres.</li>
+                <li>Plano de continuidade: Estratégias para manter operações em funcionamento.</li>
+                <li>Plano de backup e recuperação de dados: Métodos para garantir a segurança das informações.</li>
+                <li>Plano de comunicação: Garantia de que todos os stakeholders sejam informados durante uma crise.</li>
+            </ul>
+        </div>
+        <a href="../html/inicio.html">Voltar para Início</a>
+    </div>
+</body>
+<script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-firestore-compat.js"></script>
+
+<script src="../Java/firebase.js"></script>
+</html>
